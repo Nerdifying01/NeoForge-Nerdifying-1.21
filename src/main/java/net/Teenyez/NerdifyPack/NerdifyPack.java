@@ -1,5 +1,6 @@
 package net.Teenyez.NerdifyPack;
 
+import net.Teenyez.NerdifyPack.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -101,8 +102,8 @@ public class NerdifyPack {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(EXAMPLE_BLOCK_ITEM);
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.FEATHER);
         }
     }
 
